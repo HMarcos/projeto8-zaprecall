@@ -1,0 +1,59 @@
+/* --- Configurações Gerais --- */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Recursive', sans-serif;
+    background-color: #FB6B6B;
+    --fonte-righteous: 'Righteous', cursive;
+    --cor-titutlo-zap-recall: #fff;
+    --cor-botao-iniciar: #D70900;
+}
+
+.container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* --- Tela Boas-Vindas --- */
+.tela-boas-vindas {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.tela-boas-vindas img {
+    width: 55px;
+    height: 65px;
+}
+
+.tela-boas-vindas h1 {
+    font-family: var(--fonte-righteous);
+    font-size: 25px;
+    line-height: 31px;
+    text-align: center;
+    letter-spacing: -0.012em;
+
+    color: var(--cor-titutlo-zap-recall);
+}
+
+.tela-boas-vindas button {
+    width: 141px;
+    height: 31px;
+
+    background: #fff;
+    border: 1px solid var(--cor-botao-iniciar);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 5px;
+
+    font-size: 12px;
+    line-height: 14px;
+    text-align: center;
+    color: var(--cor-botao-iniciar);
+
+    margin-top: 75px;
+}
