@@ -8,8 +8,10 @@ import { useState } from "react";
 import TelaBoasVindas from "./TelaBoasVindas";
 import TelaRecall from "./TelaRecall";
 
+
+
 function App() {
-    const [tela, setTela] = useState("tela-boas-vindas");
+    const [tela, setTela] = useState("tela-recall");
 
     let telaRenderizada = null;
 

@@ -1,14 +1,18 @@
 import LogoZapRecall from "../assets/logo-pequeno.png"
 import Progresso from "./Progresso";
 import Resultado from "./Resultado";
+import Deck from "./Deck";
 
 import { useState } from "react";
 
+import ObterDeack from "./ObterDeck";
+
+const deck = ObterDeack();
 
 function TelaRecall() {
     const [progresso, setProgresso] = useState(
         {
-            numeroDeFlashcards: 4,
+            numeroDeFlashcards: deck.length,
             flashcardsRespondidos: 0,
             icones: [],
             respostas: [],
@@ -33,10 +37,6 @@ function TelaRecall() {
         }
     }
 
-
-
-
-
     return (
         <>
             <header>
@@ -47,11 +47,11 @@ function TelaRecall() {
                 }}>ZapRecall</h1>
             </header>
 
-            <main className="flashcards">
-                <h2> Perguntas</h2>
+            <main className="deck">
+                <Deck deck={deck} />
             </main>
 
-            <footer className="progresso-e-resultados">
+            <footer className="progresso-e-resultado">
                 {finalizado === false ? <Progresso progresso={progresso} /> : <Resultado progresso={progresso} />}
             </footer>
         </>
