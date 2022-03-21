@@ -16,7 +16,7 @@ function App() {
     let telaRenderizada = null;
 
     if (tela === "tela-boas-vindas") {
-        telaRenderizada = <TelaBoasVindas iniciarRecall={() => {setTela("tela-recall")}} />
+        telaRenderizada = <TelaBoasVindas iniciarRecall={() => { setTela("tela-recall") }} />
     }
     else if (tela === "tela-recall") {
         telaRenderizada = <TelaRecall />
@@ -25,7 +25,7 @@ function App() {
     console.log(tela);
 
     return (
-        telaRenderizada 
+        telaRenderizada
     )
 }
 

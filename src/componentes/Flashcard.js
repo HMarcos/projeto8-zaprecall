@@ -33,9 +33,9 @@ function Flashcard(props) {
                     <p>{resposta}</p>
                     <div className="botoes-respostas">
                         <button className="nao-lembrei" onClick={() => { processarResposta(["close-circle", "nao-lembrei"]) }}>Não <br /> lembrei</button>
-                        
+
                         <button className="quase-nao-lembrei" onClick={() => { processarResposta(["help-circle", "quase-nao-lembrei"]) }}> Quase não lembrei</button>
-                        
+
                         <button className="zap" onClick={() => { processarResposta(["checkmark-circle", "zap"]) }}> Zap!</button>
                     </div>
                 </article>

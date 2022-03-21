@@ -38,12 +38,12 @@ function ObterDeack() {
     return deckEmbaralhado;
 }
 
-function embaralharDeack(deck){
+function embaralharDeack(deck) {
     return deck.sort(comparador);
 }
 
-function comparador() { 
-	return Math.random() - 0.5; 
+function comparador() {
+    return Math.random() - 0.5;
 }
 
 

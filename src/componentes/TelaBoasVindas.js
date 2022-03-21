@@ -1,9 +1,9 @@
 import LogoZapRecall from "../assets/logo.png"
 
 function TelaBoasVindas(props) {
-    
-    const {iniciarRecall} = props;
-    
+
+    const { iniciarRecall } = props;
+
     return (
         <div className="container">
             <section className="tela-boas-vindas">

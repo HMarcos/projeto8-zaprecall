@@ -6,7 +6,7 @@ function Progresso(props) {
             <span className="concluidos">{flashcardsRespondidos}/{numeroDeFlashcards} CONCLUÍDOS</span>
 
             <div className="lista-icones">
-                {icones.map((icone ,index) => <ion-icon name={icone} key={index}> </ion-icon>)}
+                {icones.map((icone, index) => <ion-icon name={icone} key={index}> </ion-icon>)}
             </div>
         </section>
     )
