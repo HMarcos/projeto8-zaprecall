@@ -127,7 +127,7 @@ main article.flashcard:first-child {
     margin-top: 0px;
 }
 
-.flashcard.inicial {
+.flashcard.inicial, .flashcard.respondido {
     width: 300px;
     height: 65px;
 
@@ -139,7 +139,7 @@ main article.flashcard:first-child {
 
 }
 
-.flashcard.inicial span {
+.flashcard.inicial span, .flashcard.respondido span {
     font-weight: 700;
 
     font-size: 16px;
@@ -150,14 +150,17 @@ main article.flashcard:first-child {
     margin-left: 15px;
 }
 
-.flashcard.inicial ion-icon {
+.flashcard.inicial ion-icon, .flashcard.respondido ion-icon {
     font-weight: 700;
     font-size: 25px;
 
-    color: var(--cor-padrao);
-
     margin-right: 15px;
 }
+
+.flashcard.inicial ion-icon {
+    color: var(--cor-padrao);
+}
+
 
 .flashcard.perguntando, .flashcard.respondendo {
     width: 299px;
@@ -196,15 +199,13 @@ main article.flashcard:first-child {
     bottom: 6px;
 }
 
-
-
 .flashcard.respondendo .botoes-respostas {
     display: flex;
     justify-content: space-evenly;
 
     padding-top: 10px;
     margin-bottom: 6px;
-    
+
 }
 
 .flashcard.respondendo .botoes-respostas button {
@@ -222,16 +223,31 @@ main article.flashcard:first-child {
     color: var(--cor-texto-botoes-recall);
 }
 
-button.nao-lembrei{
+button.nao-lembrei {
     background-color: var(--cor-nao-lembrei);
 }
 
-button.quase-nao-lembrei{
+button.quase-nao-lembrei {
     background-color: var(--cor-quase-nao-lembrei);
 }
 
-button.zap{
+button.zap {
     background-color: var(--cor-zap);
+}
+
+.flashcard.respondido span.nao-lembrei {
+    color: var(--cor-nao-lembrei);
+    text-decoration: line-through;
+}
+
+.flashcard.respondido span.quase-nao-lembrei {
+    color: var(--cor-quase-nao-lembrei);
+    text-decoration: line-through;
+}
+
+.flashcard.respondido span.zap {
+    color: var(--cor-zap);
+    text-decoration: line-through;
 }
 
 

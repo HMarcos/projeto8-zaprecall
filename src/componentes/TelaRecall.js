@@ -41,14 +41,11 @@ function TelaRecall() {
         <>
             <header>
                 <img src={LogoZapRecall} alt="logo-zap-recall" />
-                <h1 onClick={() => {
-                    console.log("teste");
-                    atualizarProgresso({ icone: "checkmark-circle", resposta: "nao-lembrei" });
-                }}>ZapRecall</h1>
+                <h1>ZapRecall</h1>
             </header>
 
             <main className="deck">
-                <Deck deck={deck} />
+                <Deck deck={deck} atualizarProgresso={atualizarProgresso} />
             </main>
 
             <footer className="progresso-e-resultado">

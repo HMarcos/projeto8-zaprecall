@@ -2,11 +2,11 @@ import Flashcard from "./Flashcard";
 
 
 function Deck(props){
-    const {deck} = props;
+    const {deck, atualizarProgresso} = props;
 
     return (
         <>
-        {deck.map((flashcard, index) => <Flashcard flashcard={flashcard} indice = {index} key = {index} />)}
+        {deck.map((flashcard, index) => <Flashcard flashcard={flashcard} indice = {index} atualizarProgresso={atualizarProgresso} key = {index} />)}
         </>
     )
 

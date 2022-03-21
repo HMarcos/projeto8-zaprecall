@@ -11,7 +11,7 @@ import TelaRecall from "./TelaRecall";
 
 
 function App() {
-    const [tela, setTela] = useState("tela-recall");
+    const [tela, setTela] = useState("tela-boas-vindas");
 
     let telaRenderizada = null;
 
