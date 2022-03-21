@@ -1,4 +1,4 @@
-import LogoZapRecall from "../assets/logo-pequeno.png"
+import LogoZapRecall from "../assets/logo.png"
 import Progresso from "./Progresso";
 import Resultado from "./Resultado";
 import Deck from "./Deck";

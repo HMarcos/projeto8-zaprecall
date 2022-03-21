@@ -103,6 +103,8 @@ header h1 {
     color: var(--cor-titutlo-zap-recall);
 
     margin-left: 10px;
+
+    transform: rotate(0.58deg);
 }
 
 /* --- Deck --- */
@@ -336,4 +338,135 @@ ion-icon[name="help-circle"] {
 
 ion-icon[name="close-circle"] {
     color: var(--cor-nao-lembrei);
+}
+
+/* --- Layout Desktop  ---*/
+@media (min-width: 600px) {
+    .tela-boas-vindas img {
+        width: 180px;
+        height: 210px;
+    }
+
+    .tela-boas-vindas h1 {
+        font-size: 64px;
+        line-height: 79px;
+    }
+
+    .tela-boas-vindas button {
+        width: 280px;
+        height: 60px;
+
+        font-size: 26px;
+        line-height: 30px;
+        margin-top: 100px;
+    }
+
+    header {
+        padding-top: 82px;
+        padding-bottom: 80px;
+    }
+
+    header img {
+        width: 87px;
+        height: 100px;
+    }
+
+    header h1 {
+        font-size: 64px;
+        line-height: 79px;
+
+        margin-left: 30px;
+    }
+
+    main.deck {
+        margin-top: 290px;
+        margin-bottom: 320px;
+    }
+
+    article.flashcard {
+        margin-top: 20px;
+    }
+
+    .flashcard.inicial, .flashcard.respondido {
+        width: 567px;
+        height: 92px;
+    }
+
+    .flashcard.inicial span, .flashcard.respondido span {
+        font-size: 24px;
+        line-height: 29px;
+        margin-left: 23px;
+    }
+
+    .flashcard.inicial ion-icon, .flashcard.respondido ion-icon {
+        font-weight: 700;
+        font-size: 36px;
+
+        margin-right: 22px;
+    }
+
+    .flashcard.perguntando, .flashcard.respondendo {
+        width: 567px;
+    }
+
+    .flashcard.perguntando p, .flashcard.respondendo p {
+        font-size: 26px;
+        line-height: 30px;
+
+        margin-left: 23px;
+        margin-top: 25px;
+        margin-right: 42px;
+    }
+
+    .flashcard.perguntando img {
+        width: 40px;
+        height: 30px;
+    }
+
+    .flashcard.respondendo .botoes-respostas {
+        padding-top: 20px;
+        margin-bottom: 10px;
+
+    }
+
+    .flashcard.respondendo .botoes-respostas button {
+        width: 120px;
+        height: 60px;
+
+        font-size: 20px;
+        line-height: 22px;
+    }
+
+    footer .progresso {
+        height: 120px;
+    }
+
+    footer .resultado {
+        height: 300px;
+    }
+
+    footer ion-icon {
+        font-size: 36px;
+    }
+
+    footer span {
+        font-size: 32px;
+        line-height: 38px;
+    }
+
+    footer .resultado__titulo img {
+        width: 36px;
+        height: 36px;
+    }
+
+    footer .resultado__titulo h3 {
+        font-size: 32px;
+        line-height: 38px;
+    }
+
+    footer .resultado__mensagem {
+        width: 400px;
+
+    }
+
 }
