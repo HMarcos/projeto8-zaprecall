@@ -1,15 +1,25 @@
 import LogoZapRecall from "../assets/logo-pequeno.png"
 import Progresso from "./Progresso";
+import Resultado from "./Resultado";
 
 import { useState } from "react";
+
 
 function TelaRecall() {
     const [progresso, setProgresso] = useState(
         {
             numeroDeFlashcards: 4,
             flashcardsRespondidos: 0,
-            icones: []
+            icones: ["checkmark-circle", "checkmark-circle", "checkmark-circle", "checkmark-circle"],
+            respostas: ["nao-lembrei"]
         })
+
+
+    const [finalizado, setFinalizado] = useState(false);
+
+    if (progresso.respostas.length === progresso.numeroDeFlashcards) {
+        setFinalizado(true);
+    }
 
     return (
         <>
@@ -23,7 +33,7 @@ function TelaRecall() {
             </main>
 
             <footer className="progresso-e-resultados">
-                <Progresso progresso={progresso}/>
+                {finalizado === false ? <Progresso progresso={progresso} /> : <Resultado progresso={progresso} />}
             </footer>
         </>
     )

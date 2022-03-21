@@ -12,6 +12,7 @@ body {
     --cor-nao-lembrei: #FF3030;
     --cor-quase-nao-lembrei: #FF922E;
     --cor-zap: #2FBE34;
+    --cor-progresso-e-resultado: #333333;
 }
 
 .container {
@@ -30,14 +31,14 @@ body {
 }
 
 .tela-boas-vindas img {
-    width: 55px;
-    height: 65px;
+    width: 136px;
+    height: 161px;
 }
 
 .tela-boas-vindas h1 {
     font-family: var(--fonte-righteous);
-    font-size: 25px;
-    line-height: 31px;
+    font-size: 36px;
+    line-height: 45px;
     text-align: center;
     letter-spacing: -0.012em;
 
@@ -45,20 +46,20 @@ body {
 }
 
 .tela-boas-vindas button {
-    width: 141px;
-    height: 31px;
+    width: 246px;
+    height: 54px;
 
     background: #fff;
     border: 1px solid var(--cor-botao-iniciar);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 5px;
 
-    font-size: 12px;
-    line-height: 14px;
+    font-size: 18px;
+    line-height: 22px;
     text-align: center;
     color: var(--cor-botao-iniciar);
 
-    margin-top: 75px;
+    margin-top: 30px;
 }
 
 /* --- Tela Recall --- */
@@ -69,22 +70,24 @@ header {
 }
 
 header img {
-    width: 26px;
-    height: 30px;
+    width: 52px;
+    height: 60px;
 }
 
 header h1 {
     font-family: var(--fonte-righteous);
-    font-size: 20px;
-    line-height: 25px;
+    font-size: 36px;
+    line-height: 45px;
 
     letter-spacing: -0.012em;
 
     color: var(--cor-titutlo-zap-recall);
+
+    margin-left: 10px;
 }
 
 main {
-    margin-top: 40px;
+    margin-top: 50px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -99,22 +102,24 @@ footer {
     width: 100vw;
     z-index: 1;
     height: fit-content;
-    
+
     background-color: #FFF;
-    
+
 }
 
 footer span {
-    font-size: 12px;
-    line-height: 14px;
+    font-size: 18px;
+    line-height: 22px;
+    color: var(--cor-progresso-e-resultado);
 }
 
 footer ion-icon {
-    font-size: 14px;
+    font-size: 23px;
 }
 
-.progresso {
-    height: 50px;
+/* --- Progresso ---*/
+footer .progresso {
+    height: 70px;
 
     display: flex;
     flex-direction: column;
@@ -122,7 +127,42 @@ footer ion-icon {
     align-items: center;
 }
 
-.lista-icones{
+/* --- Resultado ---*/
+footer .resultado {
+    height: 170px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+footer .resultado__titulo {
+    display: flex;
+    justify-content: center;
+}
+
+footer .resultado__titulo img {
+    width: 23px;
+    height: 23px;
+    margin-right: 10px;
+}
+
+footer .resultado__titulo h3 {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+
+    color: var(--cor-progresso-e-resultado);
+}
+
+footer .resultado__mensagem {
+    width: 230px;
+    text-align: center;
+}
+
+/* --- Lista de Icones --- */
+footer .lista-icones {
     display: flex;
     justify-content: center;
 }
@@ -133,11 +173,10 @@ ion-icon[name="checkmark-circle"] {
     color: var(--cor-zap);
 }
 
-ion-icon[name="help-circle"]{
-    color:var(--cor-quase-nao-lembrei)
+ion-icon[name="help-circle"] {
+    color: var(--cor-quase-nao-lembrei)
 }
 
 ion-icon[name="close-circle"] {
     color: var(--cor-nao-lembrei);
 }
-
