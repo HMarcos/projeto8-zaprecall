@@ -17,20 +17,20 @@ function ObterDeack() {
             resposta: "expressões",
         },
         {
-            pergunta: "Componentes devem iniciar com __ ",
-            resposta: "letra maiúscula.",
+            pergunta: "O ReactDOM nos ajuda __ ",
+            resposta: "interagindo com a DOM para colocar componentes React na mesma.",
         },
         {
-            pergunta: "Componentes devem iniciar com __ ",
-            resposta: "letra maiúscula.",
+            pergunta: "Usamos o npm para __",
+            resposta: "gerenciar os pacotes necessários e suas dependências.",
         },
         {
-            pergunta: "Componentes devem iniciar com __ ",
-            resposta: "letra maiúscula.",
+            pergunta: "Usamos props para __",
+            resposta: "passar diferentes informações para componentes.",
         },
         {
-            pergunta: "Componentes devem iniciar com __ ",
-            resposta: "letra maiúscula.",
+            pergunta: " Usamos estado (state) para __",
+            resposta: "dizer para o React quais informações quando atualizadas devem renderizar a tela novamente.",
         }
     ]
 

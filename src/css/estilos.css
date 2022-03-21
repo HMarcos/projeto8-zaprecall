@@ -15,6 +15,8 @@ body {
     --cor-zap: #2FBE34;
     --cor-padrao: #333333;
     --cor-bg-flashcard: #fff;
+    --cor-bg-flashcard-pergunta: #FFFFD5;
+    --cor-texto-botoes-recall: #fff;
 }
 
 .container {
@@ -22,6 +24,12 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+button {
+    border: none;
+
+    cursor: pointer;
 }
 
 /* --- Tela Boas-Vindas --- */
@@ -109,7 +117,7 @@ main.deck {
 
 /* --- Flash Cards --- */
 
-article.flashcard{
+article.flashcard {
     box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.15);
     border-radius: 5px;
     margin-top: 30px;
@@ -128,10 +136,10 @@ main article.flashcard:first-child {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    
+
 }
 
-.flashcard.inicial span{
+.flashcard.inicial span {
     font-weight: 700;
 
     font-size: 16px;
@@ -142,7 +150,7 @@ main article.flashcard:first-child {
     margin-left: 15px;
 }
 
-.flashcard.inicial ion-icon{
+.flashcard.inicial ion-icon {
     font-weight: 700;
     font-size: 25px;
 
@@ -150,6 +158,82 @@ main article.flashcard:first-child {
 
     margin-right: 15px;
 }
+
+.flashcard.perguntando, .flashcard.respondendo {
+    width: 299px;
+    min-height: 131px;
+
+    background-color: var(--cor-bg-flashcard-pergunta);
+
+    position: relative;
+}
+
+.flashcard.respondendo {
+    display: flex;
+    flex-direction: column;
+
+    justify-content: space-between;
+}
+
+.flashcard.perguntando p, .flashcard.respondendo p {
+    font-size: 18px;
+    line-height: 22px;
+
+    color: var(--cor-padrao);
+
+    margin-left: 15px;
+    margin-top: 18px;
+    margin-right: 35px;
+
+}
+
+.flashcard.perguntando img {
+    width: 30px;
+    height: 20px;
+
+    position: absolute;
+    right: 15px;
+    bottom: 6px;
+}
+
+
+
+.flashcard.respondendo .botoes-respostas {
+    display: flex;
+    justify-content: space-evenly;
+
+    padding-top: 10px;
+    margin-bottom: 6px;
+    
+}
+
+.flashcard.respondendo .botoes-respostas button {
+    width: 85px;
+    height: 37px;
+
+    border-radius: 5px;
+
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+
+    text-align: center;
+
+    color: var(--cor-texto-botoes-recall);
+}
+
+button.nao-lembrei{
+    background-color: var(--cor-nao-lembrei);
+}
+
+button.quase-nao-lembrei{
+    background-color: var(--cor-quase-nao-lembrei);
+}
+
+button.zap{
+    background-color: var(--cor-zap);
+}
+
 
 /* --- Progresso e Resultados --- */
 footer.progresso-e-resultado {
